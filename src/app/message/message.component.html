@@ -1,0 +1,5 @@
+<div [ngClass]="{'self':isSender, 'other': !isSender}">
+  <div *ngIf= "!isSender" class="user-name">{{user}}</div>
+  <div class="message">{{message}}</div>
+  <div class="time">{{time | date:'shortTime'}}</div>
+</div>

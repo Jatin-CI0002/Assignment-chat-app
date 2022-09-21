@@ -1,0 +1,12 @@
+<div class="container">
+  <header>
+    <div class="user">{{userName}}</div>
+    <button class="cross" (click)="closeChat()">X</button>
+  </header>
+  <div class="chat"><ng-container #container></ng-container></div>
+
+  <footer>
+    <input type="text" class="msg" [(ngModel)] = "userMessage" />
+    <button class="send" (click) = "sendMessage()">↲</button>
+  </footer>
+</div>

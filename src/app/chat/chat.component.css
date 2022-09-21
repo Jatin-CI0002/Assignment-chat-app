@@ -1,0 +1,66 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 5%;
+  border-radius: 5%;
+}
+
+header {
+  display: flex;
+  margin-top: 2%;
+  height: 10%;
+  /* border: 1px solid red; */
+}
+
+.chat {
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #ddf6ff;
+  margin: 1% 0;
+  overflow-y: auto;
+}
+
+.msg {
+  width: 80%;
+}
+
+button {
+  width: 20%;
+  background: none;
+  /* border: 1px solid black; */
+  border: none;
+  border-radius: 10%;
+  font-weight: bold;
+}
+input{
+  font-size: 1.4em;
+}
+.user {
+  width: 80%;
+  height: 50%;
+  padding-left: 5%;
+  font-size: 2em;
+}
+  footer {
+    display: flex;
+    height: 10%;
+    padding: 0 2% 2% 2%;
+    /* margin-top: %; */
+    /* border: 1px solid blue; */
+}

@@ -1,0 +1,27 @@
+.html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.inputs{
+  margin:5% 0 0 5%;
+  font-size: 2em;
+}
+input{
+  height: 50%;
+}
+.chat-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
