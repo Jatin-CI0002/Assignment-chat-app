@@ -1,0 +1,10 @@
+html,body{
+  width: 100%;
+  margin: 0;
+}
+
+.chat-window{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

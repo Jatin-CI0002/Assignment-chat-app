@@ -1,0 +1,5 @@
+<div [ngClass]="{'self':side, 'other': !side}">
+  <div *ngIf= "!side" class="user-name">{{messageData.Name}}</div>
+  <div class="message">{{messageData.Message}}</div>
+  <div class="time">{{messageData.Time | date:'shortTime'}}</div>
+</div>

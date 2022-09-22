@@ -1,0 +1,16 @@
+<div class="container" *ngIf = "close">
+  <header>
+    <div class="user">{{userName}}</div>
+    <button class="cross" (click)="closeChat()" >X</button>
+  </header>
+  <main class="chat">
+  <div *ngFor="let message of messages">
+    <app-message [userName] = "userName" [messageData] = "message"></app-message>
+  </div>
+</main>
+
+  <footer>
+    <input type="text" class="msg" [(ngModel)] = "message" (keydown)="onKeydown($event)"/>
+    <button class="send" (click)="createMessage()">Send</button>
+  </footer>
+</div>
